@@ -1,155 +1,55 @@
-# 🌍 WanderLust
+# WanderLust 🌍
 
-A full-stack travel listing web application where users can explore, create, edit, and review beautiful stays from around the world.
-
-Built using the MERN backend stack with authentication, authorization, and CRUD functionality.
-
-## 🚀 Live Demo
-
-🔗 https://majorproject-7kxx.onrender.com
-
-## 📂 GitHub Repository
-
-🔗 https://github.com/harshit-exe-dev/WanderLust
-
----
+A full-stack travel listing web application with secure authentication, interactive maps, image uploads, and reviews.
 
 ## ✨ Features
-
-- 🔐 User Authentication (Sign Up, Login & Logout)
-- 🏡 Create, Edit & Delete Listings
-- 📸 Add images using image URLs
-- ⭐ Review & Rating System
-- 👤 Authorization (Only owners can edit/delete their listings)
-- 💬 Flash Messages
-- 📱 Responsive UI
-- ☁️ MongoDB Atlas Database
-- 🚀 Deployed on Render
-
----
+- 🔐 User authentication & authorization
+- 🗺️ Interactive maps with Mapbox
+- 📸 Image uploads with Cloudinary
+- ⭐ Review system with ratings
+- 🛠️ Full CRUD functionality for listings
+- 📱 Responsive design
 
 ## 🛠️ Tech Stack
+- **Frontend:** EJS, CSS, JavaScript
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Services:** Cloudinary, Mapbox
 
-### Frontend
-- HTML5
-- CSS3
-- Bootstrap 5
-- EJS
+## 🚀 Getting Started
 
-### Backend
-- Node.js
-- Express.js
+### Prerequisites
+- Node.js installed
+- MongoDB running locally or Atlas URI
+- Cloudinary & Mapbox API keys
 
-### Database
-- MongoDB Atlas
-- Mongoose
+### Installation
+1. Clone the repo
+   ```bash
+   git clone https://github.com/harshit-exe-dev/WanderLust.git
+   cd WanderLust
+   ```
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+3. Create `.env` file with your credentials
+   ```
+   CLOUDINARY_CLOUD_NAME=your_name
+   CLOUDINARY_KEY=your_key
+   CLOUDINARY_SECRET=your_secret
+   MAPBOX_TOKEN=your_token
+   DB_URL=your_mongodb_url
+   SECRET=your_session_secret
+   ```
+4. Run the app
+   ```bash
+   node app.js
+   ```
+   Visit `http://localhost:8080`
 
-### Authentication
-- Passport.js
-- Passport Local
-- Express Session
-- Connect Flash
-
-### Deployment
-- Render
-
-
-
-## 📦 Installation
-
-Clone the repository
-
-```bash
-git clone https://github.com/harshit-exe-dev/WanderLust.git
-```
-
-Go inside the project
-
-```bash
-cd WanderLust
-```
-
-Install dependencies
-
-```bash
-npm install
-```
-
-Create a `.env` file
-
-```env
-ATLASDB_URL=your_mongodb_connection_string
-
-SECRET=your_secret_key
-
-CLOUD_NAME=your_cloudinary_name
-
-CLOUD_API_KEY=your_cloudinary_api_key
-
-CLOUD_API_SECRET=your_cloudinary_api_secret
-```
-
-Start the project
-
-```bash
-node app.js
-```
-
-or
-
-```bash
-nodemon app.js
-```
-
-Open
-
-```
-http://localhost:8080
-```
-
----
-
-## 📁 Project Structure
-
-```
-WanderLust/
-│── models/
-│── routes/
-│── views/
-│── controllers/
-│── public/
-│── middleware.js
-│── app.js
-│── package.json
-│── .env
-```
-
----
-
-## 📚 What I Learned
-
-- Express.js Routing
-- REST APIs
-- MongoDB & Mongoose
-- Authentication using Passport.js
-- Sessions & Cookies
-- MVC Architecture
-- CRUD Operations
-- Deployment with Render
-- Debugging real-world full-stack applications
-
----
+## 📝 License
+This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
-
-**Harshit Bharti**
-
-GitHub: https://github.com/harshit-exe-dev
-
-LinkedIn: https://www.linkedin.com/in/harrshitbharrti?utm_source=share_via&utm_content=profile&utm_medium=member_android
-
----
-
-## ⭐ If you like this project
-
-Give it a ⭐ on GitHub!
+**Harshit Bharti** - [@harshit-exe-dev](https://github.com/harshit-exe-dev)
